@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #2d2013;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box .control {
+  display: flex;
+  flex-direction: row;
+}
+
+.box .control .flex {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+  width: 50vw;
+}
+
+.box .control .flex input {
+  width: 100%;
+  height: 30px;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+}
+
+.box .control .flex input:focus {
+  outline: none;
+}
+
+.box .control .flex button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  padding: 5px 10px;
+}
+
+.box .control .random-btn {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.box .meals {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .meals .meal-box {
+  width: 20vw;
+  height: 20vw;
+  margin: 5px;
+  position: relative;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.box .meals .meal-box img {
+  width: 100%;
+  border: 5px solid white;
+  transition: opacity 5s ease-in;
+}
+
+.box .meals .meal-box .meal-info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  margin: 5px;
+  padding: 2rem;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box .meals .meal-box .meal-info:hover {
+  opacity: 1;
+}
+
+.show-pic h1 {
+  font-size: 2rem;
+}
+
+.show-pic img {
+  height: 60vh;
+}
+
+.show-pic .instruction {
+  padding: 0 10vw 5vw 10vw;
+  line-height: 1.5rem;
+}
+
+.show-pic .instruction p {
+  text-align: left;
+  white-space: pre-line;
+}
+
+.show-pic .instruction .ingredients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.show-pic .instruction .ingredients span {
+  background-color: white;
+  color: #2d2013;
+  border-radius: 8px;
+  padding: 5px 15px;
+  margin: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Tahoma, sans-serif;
+}
